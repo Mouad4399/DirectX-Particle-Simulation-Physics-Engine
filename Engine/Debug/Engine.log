@@ -1,0 +1,6 @@
+﻿  Game.cpp
+c:\users\mo3mo3\desktop\c++projects\chill\chili framework 2016\engine\game.cpp(228): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\mo3mo3\desktop\c++projects\chill\chili framework 2016\engine\game.cpp(232): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\mo3mo3\desktop\c++projects\chill\chili framework 2016\engine\game.cpp(236): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\mo3mo3\desktop\c++projects\chill\chili framework 2016\engine\game.cpp(240): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Engine.vcxproj -> C:\Users\mo3mo3\Desktop\C++projects\Chill\Chili Framework 2016\Debug\Engine.exe
