@@ -22,3 +22,22 @@ By specifying the spring length, you can make the particles form any desired sha
 
 In this project, I utilized basic Linear Algebra concepts and physics equations to bring these features to life, all out of curiosity and passion for learning.
 Check out the demo video showcasing the project in action.
+
+# the n-side polygon general equation I invented for this project :
+
+where:
+
+$$(i,j)$$ is the vector for translation 
+
+$$r$$ is the rotation
+
+$$n$$ is the number of sides you want 
+```math
+
+
+(sqrt{((cos((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})*2*\frac{pi}{n})+r)+cos(((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})+1)*2*\frac{pi}{n})+r)))^{2}+((\sin((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})*2*\frac{pi}{n})+r)+\sin(((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})+1)*2*\frac{pi}{n})+r)))^{2}})^{-1}*((x-i)*((cos((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})*2*\frac{pi}{n})+r)+cos(((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})+1)*2*\frac{pi}{n})+r)))+(y-j)*((\sin((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})*2*\frac{pi}{n})+r)+\sin(((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})+1)*2*\frac{pi}{n})+r))))=\frac{(sqrt{((cos((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})*2*\frac{pi}{n})+r)+cos(((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})+1)*2*\frac{pi}{n})+r)))^{2}+((\sin((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})*2*\frac{pi}{n})+r)+\sin(((floor(\frac{atan2((y-j),(x-i))-r}{2*\frac{pi}{n}})+1)*2*\frac{pi}{n})+r)))^{2}})}{2}
+
+```
+
+
+like if we say I want a $$x,y$$ vector that exist between k*pi/n and k*pi/n +1 ,its the projection (scalar produt) on the center vector that also exist in the same k *pi/n and k*pi/n +1 should be equal to half of norm of that center vector , this scalar product is just to maintain the same scale of the polygons in order to be overlapped with the 1 raduis circle otherwise when changing the n the polygons will be different in size.
